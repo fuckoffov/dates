@@ -16,8 +16,11 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // 🔥 ДОБАВЛЕНО ТОЛЬКО ЭТО (обязательно для GitHub Pages)
   base: '/dates/',
+
+  build: {
+    outDir: 'docs',
+  },
 
   plugins: [
     figmaAssetResolver(),
